@@ -1,19 +1,51 @@
-# Site settings
-title: Nice Blog
-name: Nice Blog # your name
-email: youremail@example.com # your email address
-description: >
-    A Simple Jekyll Blog Theme. # this means to ignore newlines until "baseurl:"
-baseurl: "/Nice_Blog" # the subpath of your site, e.g. /blog
-url: "https://itisbenjamin.github.io" # the base hostname & protocol for your site
-twitter_username: itisbenjamin1 # your Twitter username
-github_username: itisbenjamin # your Github username
-disqus_username: itisbenjamin # your disqus username
+# Site Info
+title:              "The Plain"
+description:        "The Plain is a minimalist Jekyll theme, that's it. Can't say anymore..."
+google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
+google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
 
-google-analytics: UA-75034651-1 # add it if you have one
+# Author Info
+author_name:        "YOUR_NAME" # Your name here
+author_email:       hnrird@gmail.com # Your email here
+author_gravatar:    2b38b1b0e7e08b69379bd61582adf0c8 # Your Gravatar md5 hash here for logo
+twitter_username:   HeiswayiNrird # Your Twitter username here
+github_username:    heiswayi # Your GitHub username here
 
-skillstree: true # turn on or off the skills tree in about page
+# Site Settings
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+permalink:          /notes/:title # Post permalink
+timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to false to disable
 
-# Build settings
-permalink: none
-markdown: kramdown
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
