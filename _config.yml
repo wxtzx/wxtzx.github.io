@@ -1,51 +1,26 @@
-# Site Info
-title:              "咦嘻嘻~"
-description:        "喜欢看你紧紧皱眉，叫我胆小鬼"
-google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
-google_analytics:   UA-XXXXXXX-X # Put your Google Analytics code
+# Site settings ...
+uri: domain.com
+url: https://domain.com
+name: Your name
+title: Mangan Jekyll Theme
+email: example@domain.com
+author: username
+baseurl: ""
+keywords: "Your, Keyword, Here"
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil, velit odio quia autem quos. Natus itaque sint, nisi fuga dolorum. Iste ea cumque, aliquam dignissimos vitae labore atque minima?"
+social_username: username
 
-# Author Info
-author_name:        "Alpha" # Your name here
-author_email:       alpha921102@gmail.com # Your email here
-author_gravatar:    1884e3215a58e5df12e936f941720ad3 # Your Gravatar md5 hash here for logo
-twitter_username:     # Your Twitter username here
-github_username:    wxtzx # Your GitHub username here
-
-# Site Settings
-baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
-permalink:          /notes/:title # Post permalink
-timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-mathjax:            true  # enables support for mathjax - set to false to disable
-
-# Site Build
-highlighter:        rouge
-markdown:           kramdown
-kramdown:
-    input:          GFM
+# Build settings ...
 sass:
-    style:          :compressed
+  style: compressed
+markdown: kramdown
+encoding: "utf-8"
+paginate: 5
+permalink: /post/:title
+paginate_path: "/page/:num/"
 
-# Other Params
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+# Plugins ...
 gems:
+  - jekyll-paginate
   - jekyll-sitemap
-
-
-
-defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
-  -
-    scope:
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      type:         "posts"
-    values:
-      layout:       "post"
+  - jemoji

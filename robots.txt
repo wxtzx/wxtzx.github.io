@@ -1,8 +1,5 @@
----
-layout: null
----
+User-agent: Mediapartners-Google
+Disallow:
 
-sitemap: {{ site.baseurl | replace: 'https', 'http' | append: '/sitemap.xml' }}
-
-user-agent: EmailCollector
-disallow: /
+User-agent: *
+Allow: /

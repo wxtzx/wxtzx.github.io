@@ -1,21 +1,62 @@
-# The Plain v3.0
+# Mangan
 
-The Plain is a minimalist Jekyll theme, designed to focus on writing that really matters to you and your audience. Everything else is just a distraction. Nothing more other than useful and understandable information sharing. I have made a final update to this theme. This theme is suit best for personal blog type, but not limited to. P/S: This theme is originally inspired from Leonard Lamprecht's original [Jekyll theme](https://github.com/leo/leo.github.io) (thanks!).
+[![Build Status](https://img.shields.io/travis/dikiaap/mangan/master.svg?style=flat-square)](https://travis-ci.org/dikiaap/mangan)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dikiaap/mangan)
 
-[**Live Demo**](http://heiswayi.github.io/the-plain/)
+![image](http://i.imgur.com/dgzKZlq.png)
 
-### Screenshot
+## Requirements
+- Ruby >= 2.1
+- [RubyGems](http://rubygems.org/pages/download)
+- Linux, Unix, or Mac OS X
+- Git
 
-![The Plain Screenshot](http://i.imgur.com/8ZXhjfV.png)
+## Install
 
-### Philosophy
+**Note** : Follow this steps until done and your website will be online.
 
-> Minimalism is a masterpiece of tranquility. -- Heiswayi Nrird
+Fork, then rename to `username.github.io` and clone to your computer.
 
-### License
+```shell
+git clone https://github.com/username/username.github.io.git
+cd username.github.io
+sudo gem install jekyll jekyll-paginate jekyll-sitemap
+sudo gem install jemoji octopress
+octopress new post "Your post"
+jekyll build
+jekyll serve
+```
 
-[MIT](LICENSE.md)
+If looks good, then deploy to GitHub.
 
-### Credits
+```shell
+git add -u
+git add .
+git commit -m "Message"
+git push
+```
 
-Many thanks to this theme [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) that help fixing bugs or enhance this theme source code.
+Visit your website now and custom what you want! :sparkles:
+
+## What's in there?
+
+ * Beauty, minify, and little awesome code
+ * Emoji support
+ * Geek theme
+ * Instagram view
+ * Pagination
+ * SEO directly used
+ * Speed up
+ * Unique and secret fun in code and webview
+ * URI
+ * More!
+
+## Demo
+
+See demo [here](https://mangan.dikiaap.id).
+
+More feature, you can visit [jekyllrb.com](http://jekyllrb.com).
+
+## License
+
+MIT © [Diki Ananta](https://dikiaap.id)
